@@ -6,3 +6,4 @@
 # algorithm
 # algorithm
 # algorithm
+# algorithm-as-recipe
