@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recommendation Algorithm</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #e9e9e9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.section-label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.divider {
+  height: 1px;
+  background: #bfbfbf;
+  margin-bottom: 20px;
+}
+
+header {
+  background: #e9e9e9;
+  padding: 40px 60px 20px;
+}
+
+.nav-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #cfcfcf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+main {
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #f4f4f4;
+  border: 1px solid #cfcfcf;
+  padding: 24px;
+}
+
+.card hr {
+  border: none;
+  border-top: 1px solid #cfcfcf;
+  margin: 16px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.steps {
+  border: 1px solid #cfcfcf;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step-number {
+  background: #3a3a3a;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.step-content {
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.step-content p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="section-label">Global Header / Navigation</div>
+  <div class="divider"></div>
+
+  <div class="nav-box">
+    <strong>Algorithm as Recipe</strong>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="recipe-index.html">Recipe Index</a>
+      <a href="about.html">About / Method</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="section-label">Recipe Header</div>
+    <div class="divider"></div>
+
+    <div class="card">
+      <h2>Recommendation Algorithm</h2>
+      <hr>
+      <p>An algorithm that recommends content based on user data patterns and engagement.</p>
+      <hr>
+      <p><strong>Inputs:</strong> User Activity</p>
+      <p>Preferences</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Ingredients List</div>
+    <div class="divider"></div>
+
+    <div class="card">
+      <h2>Ingredients</h2>
+      <hr>
+      <ul>
+        <li>User Data</li>
+        <li>Ranking Parameters</li>
+        <li>Filtering Rules</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Notes / Variations</div>
+    <div class="divider"></div>
+
+    <div class="card">
+      <h2>Notes & Variations</h2>
+      <hr>
+      <ul>
+        <li>Algorithm may reinforce filter bubbles.</li>
+        <li>Adjust ranking rules for different contexts.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="grid-column: span 3;">
+    <div class="section-label">Step-by-Step Module</div>
+    <div class="divider"></div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">Step 1</div>
+        <div class="step-content">
+          <strong>Collect Data</strong>
+          <p>Gather user behavior data.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">Step 2</div>
+        <div class="step-content">
+          <strong>Analyze Patterns</strong>
+          <p>Identify trends and preferences.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">Step 3</div>
+        <div class="step-content">
+          <strong>Rank Content</strong>
+          <p>Sort content by relevance.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">Step 4</div>
+        <div class="step-content">
+          <strong>Display Results</strong>
+          <p>Show personalized recommendations.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
